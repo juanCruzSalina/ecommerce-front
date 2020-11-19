@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+}
+
+.container {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-check-input {
+  margin-top: 0.55rem;
+}
+
+#submitButton {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+#sign-up {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+#facebook,
+#email {
+  padding: 10px;
+  display: inline-flex;
+  align-items: flex-end;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.googleButton {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.googleButton span {
+  font-size: 20px;
+}
+
+#facebook {
+  background-color: blue;
+  color: white;
+}
+
+#email {
+  margin-bottom: 20px;
+}
+
+#icons {
+  padding-right: 10px;
+  font-size: 30px;
+  align-items: center;
+}
