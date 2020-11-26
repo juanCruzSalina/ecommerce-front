@@ -1,28 +1,17 @@
 // React
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Axios from 'axios';
 
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/LogIn.css';
+import '../styles/LogIn.css';
 
 // Font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../fontawesome';
+import '../../fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const LogIn = () => {
-  const handleGoogleSubmit = async (e) => {
-    const res = await Axios.get('http://localhost:5000/api/oauth/google');
-    console.log(res);
-  };
-
-  const handleFacebookSubmit = async (e) => {
-    const res = await Axios.get('http://localhost:5000/api/oauth/facebook');
-    console.log(res);
-  };
-
   return (
     <Fragment>
       <div className='container w-75'>
@@ -80,22 +69,6 @@ export const LogIn = () => {
                 </Link>
               </button>
               <p> Or Log-In with: </p>
-
-              <button
-                onClick={(e) => {
-                  handleGoogleSubmit(e);
-                }}
-              >
-                google
-              </button>
-
-              <button
-                onClick={(e) => {
-                  handleFacebookSubmit(e);
-                }}
-              >
-                facebook
-              </button>
             </div>
           </div>
         </div>

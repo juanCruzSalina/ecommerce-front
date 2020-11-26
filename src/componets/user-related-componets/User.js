@@ -1,13 +1,16 @@
 import Axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-export const Users = () => {
-  const [user, setUser] = useState('');
+export const User = () => {
+  const [{ data }, setUser] = useState('');
 
   useEffect(() => {
-    const userData = Axios.get('http://localhost:5000/api/users');
-    console.log(userData);
+    Axios.get('/api/users').then((res) => {
+      setUser(res.data);
+    });
   }, []);
+
+  console.log(data);
 
   return (
     <div>
